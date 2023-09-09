@@ -1,7 +1,7 @@
 {
   "name": "app-1",
   "version": "0.1.0",
-  "homepage": "http://ahmad5360.github.io/movie-dom",
+  "homepage": "http://ahmad5360.github.io/movies-app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
