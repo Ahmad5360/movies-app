@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+
+.container {
+    text-align: center;
+  }
+  .toggle-switch {
+    position: relative;
+    width: 80px;
+    display: inline-block;
+    text-align: left;
+    top: 230px;
+    right: 350px;
+    border:var(--switch-border) ;
+    border-radius: 20px;
+    margin-left: 60px;
+    position: absolute;
+  }
+
+  .light-theme
+  {
+    --switch-border : 2px solid #0099f1;
+    --switch-bg : #0099f1;
+  }
+  .dark-theme
+  {
+    --switch-border : 2px solid white;
+    --bg-color: rgb(0, 0, 0);
+    --switch-bg : #fff;
+  }
+  .checkbox {
+    display: none;
+  }
+  .label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+  }
+  .inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    
+  }
+  .inner:before,
+  .inner:after {
+    float: left;
+    width: 50%;
+    height: 38px;
+    padding: 0;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    
+  }
+  .inner:before {
+    content: "Dark";
+    padding-left: 8px;
+    background-color:transparent;
+    color: #fff;
+    
+  }
+  .inner:after {
+    content: "Light";
+    padding-right: 8px;
+    background-color: var(--bg-color) ;
+    color: black;
+    text-align: right;
+    font-family: "Raleway", sans-serif;
+    
+  }
+  .switch {
+    display: block;
+    width: 20px;
+    margin: 4px;
+    background: var(--switch-bg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50px;
+    /* border: 0 solid #bbb; */
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+    
+  }
+  .checkbox:checked + .label .inner {
+    margin-left: 0;
+  }
+  .checkbox:checked + .label .switch {
+    right: 0px;
+  }
+
+
+  @media screen and (max-width: 1300px) {
+    .toggle-switch
+    {
+      left: 380px;
+      margin-bottom: 50px;
+    }
+    .switch
+    {
+      width: 19px;
+      right: 45px;
+      border-radius: 19px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .toggle-switch
+    {
+      left: 600px;
+      margin-bottom: 70px;
+    }
+    .switch
+    {
+      width: 22px;
+      right: 46px;
+      border-radius: 24px;
+      margin: 5px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 16px;
+      height: 38px;
+    }
+  }
+
+  
+  @media screen and (max-width: 900px) {
+    .toggle-switch
+    {
+      left: 240px;
+      margin-bottom: 50px;
+    }
+    .switch
+    {
+      width: 19px;
+      right: 45px;
+      border-radius: 19px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .toggle-switch
+    {
+      left: 240px;
+      margin-bottom: 50px;
+    }
+    .switch
+    {
+      width: 19px;
+      right: 45px;
+      border-radius: 19px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .toggle-switch
+    {
+      left: 260px;
+      top: 145px;
+      width: 72px;
+    }
+    .switch
+    {
+      width: 16px;
+      right: 45px;
+      border-radius: 16px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 13px;
+      height: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .toggle-switch
+    {
+      left: 230px;
+      margin-bottom: 50px;
+    }
+    .switch
+    {
+      width: 19px;
+      right: 43px;
+      border-radius: 19px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .toggle-switch
+    {
+      left: 200px;
+      margin-bottom: 50px;
+    }
+    .switch
+    {
+      width: 19px;
+      right: 43px;
+      border-radius: 19px;
+      margin: 4px;
+
+    }
+    .inner:before,
+    .inner:after 
+    {
+      font-size: 14px;
+      height: 38px;
+    }
+  }
